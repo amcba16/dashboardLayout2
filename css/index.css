@@ -1,0 +1,113 @@
+.main-header h1{
+    color : #a5158c;
+    font-size : 1.4rem;
+}
+.primary-cards {
+    margin-top : 2rem;
+    display : grid;
+    grid-template-columns : 1fr;
+    grid-template-rows : repeat(4,1fr);
+    gap : 1rem;
+}
+.primary-cards .primary-card:first-child {
+    background-color: #c1121e36;
+}
+.primary-cards .primary-card:nth-child(2) {
+    background-color : #2d6a4f88;
+}
+.primary-cards .primary-card:nth-child(3) {
+    background-color : #1d4fd876;
+}
+.primary-cards .primary-card:nth-child(4) {
+    background-color : #f4b30044;
+}
+.primary-card {
+    border : 1px solid #a5158c;
+    border-radius : 0.5rem;
+    padding : 0.8rem;
+    display : flex;
+    color : #ff2df1;
+    font-size : 1rem;
+    height : 100%;
+    width : 100%;
+    gap : 1rem;
+    justify-content : start;
+    line-height : 1.4;
+}
+.primary-card-icon {
+    width : 2rem;
+    height : 2rem;
+}
+.primary-card-content p:first-child {
+    margin-bottom : 1rem;
+}
+.primary-card-content p:nth-child(2) {
+    font-size : 1.5rem;
+    font-weight : 600;
+}
+.secondary-cards {
+    margin-top : 2rem;
+    display : grid;
+    grid-template-columns : 1fr;
+    gap : 1rem;
+}
+.secondary-card {
+    border : 1px solid #a5158c;
+    padding : 1rem;
+    border-radius : 0.5rem;
+    color : #ff2df1;
+    font-size : 1rem;
+    line-height : 1.4;
+}
+.secondary-card header {
+    display : flex;
+    justify-content : space-between;
+    margin-bottom : 0.5rem; 
+    padding-bottom : 1rem;
+    border-bottom : 1px solid #a5158c;
+}
+.header-icon {
+    width : 2rem;
+    height : 2rem;
+}
+.secondary-card-header-content p:first-child {
+    font-size : 1.5rem;
+    font-weight : 600;
+}
+.secondary-card-footer {
+    display : flex;
+    justify-content : space-between;
+    margin-top : 1rem;
+}
+.secondary-card-footer a:link,
+.secondary-card-footer a:visited {
+    text-decoration : none;
+    color : #ff2df1
+}
+.secondary-cards section:first-child .secondary-card-footer span {
+    color : rgba(0, 250, 0, 0.501);
+}
+.secondary-cards section:nth-child(2) .secondary-card-footer span {
+    color : red;
+}
+.secondary-cards section:nth-child(3) .secondary-card-footer span {
+    color : yellow;
+}
+@media (min-width : 768px) {
+    .primary-cards {
+        grid-template-columns : 1fr 1fr;
+        grid-template-rows : 1fr 1fr;
+    }
+    .secondary-cards {
+        grid-template-columns : 1fr 1fr;
+    }
+}
+@media (min-width : 1200px) {
+    .primary-cards {
+        grid-template-columns : repeat(4,1fr);
+        grid-template-rows : 1fr;
+    }
+    .secondary-cards {
+        grid-template-columns : repeat(3,1fr);
+    }
+}

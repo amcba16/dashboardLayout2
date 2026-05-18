@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <aside id="sidebar">
+        <div id="sidebar-item">
+            <header class="sidebar-header">
+                <div class="sidebar-header-content">
+                    <img src="img/profile.jpg" alt="logo"/>
+                    <h1>Admin Panel</h1>
+                </div>
+            </header>
+            <section class="sidebar-menu">
+                <a href="index.html" id="selected-item">
+                    <div class="sidebar-item">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <p>Dashbaord</p>
+                    </div>
+                </a>
+                <a href="inventory.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="cube-outline"></ion-icon>
+                        <p>Inventory</p>
+                    </div>
+                </a>
+                <a href="addItem.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <p>Add Item</p>
+                    </div>
+                </a>
+                <a href="report.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="document-outline"></ion-icon>
+                        <p>Report</p>
+                    </div>
+                </a>
+                <a href="error.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                        <p>404 Error</p>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="log-in-outline"></ion-icon>
+                        <p>Login</p>
+                    </div>
+                </a>
+                <a href="signup.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                        <p>Sign Up</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </aside>
+    <header id="header">
+        <ion-icon name="menu-outline" id="menu-button"></ion-icon>
+        <div id="profile-icons">
+            <div class="notification-container">
+                <ion-icon name="notifications-outline" id="bell-icon"></ion-icon>
+                <div class="notification-content">
+                    <div class="notification-item">
+                        <img src="img/profile.jpg" alt="notification-item" class="notification-item-image"/>
+                        <div class="notification-item-content">
+                            <p>New Order received</p>
+                            <p>order #12345 has been placed</p>
+                            <p>5 minutes ago</p>
+                        </div>
+                    </div>
+                    <hr class="hr"/>
+                    <div class="notification-item">
+                        <img src="img/profile.jpg" alt="notification-item" class="notification-item-image"/>
+                        <div class="notification-item-content">
+                            <p>New user registered</p>
+                            <p>User @cyberDragon has signed up</p>
+                            <p>30 minutes ago</p>
+                        </div>
+                    </div>
+                    <hr class="hr"/>
+                    <div class="notification-item">
+                        <img src="img/profile.jpg" alt="notification-item" class="notification-item-image"/>
+                        <div class="notification-item-content">
+                            <p>Payment confiremed</p>
+                            <p>Payment of $299 has been received</p>
+                            <p>1 hour ago</p>
+                        </div>
+                    </div>
+                    <hr class="hr"/>
+                    <div class="view-all-notification">
+                        <p>View all notification</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="profile-setting">
+                <img src="img/profile.jpg" alt="logo" class="profile-picture">
+                <div class="profile-setting-container">
+                    <div class="border">
+                        <header class="profile-header">
+                            <img src="img/profile.jpg" alt="logo" class="profile-setting-image"/>
+                            <div class="profile-header-name">
+                                <p>Cyber Dragon</p>
+                                <p>@Cyber</p>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="profile-setting-content">
+                        <a href="#">Home</a>
+                        <a href="#">Inbox</a>
+                        <a href="#">Chat</a>
+                        <a href="#">Activity</a>
+                        <a href="#">Account Setting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-header">
+            <h1>Dashboard</h1>
+        </div>
+        <section class="primary-cards">
+            <section class="primary-card">
+                <ion-icon name="clipboard-outline" class="primary-card-icon"></ion-icon>
+                <div class="primary-card-content">
+                    <p>Total Sales</p>
+                    <p>$25000</p>
+                    <p>+5% since last month</p>
+                </div>
+            </section>
+            <section class="primary-card">
+                <ion-icon name="sync-outline" class="primary-card-icon"></ion-icon>
+                <div class="primary-card-content">
+                    <p>Total Purchase</p>
+                    <p>$18,000</p>
+                    <p>+22% since last month</p>
+                </div>
+            </section>
+            <section class="primary-card">
+                <ion-icon name="cash-outline" class="primary-card-icon"></ion-icon>
+                <div class="primary-card-content">
+                    <p>Total Expenses</p>
+                    <p>$9,000</p>
+                    <p>+10% since last month</p>
+                </div>
+            </section>
+            <section class="primary-card">
+                <ion-icon name="document-outline" class="primary-card-icon"></ion-icon>
+                <div class="primary-card-content">
+                    <p>Invoice Due</p>
+                    <p>$25,000</p>
+                    <p>+35 since last month</p>
+                </div>
+            </section>
+        </section>
+        <section class="secondary-cards">
+            <section class="secondary-card">
+                <header class="secondary-card-header">
+                    <div class="secondary-card-header-content">
+                        <p>$25,000</p>
+                        <p>Total Profile</p>
+                    </div>
+                    <ion-icon name="copy-outline" class="header-icon"></ion-icon>
+                </header>
+                <div class="secondary-card-footer">
+                    <p><span>+35%</span> vs Last Month</p>
+                    <a href="#">View</a>
+                </div>
+            </section>
+            <section class="secondary-card">
+                <header class="secondary-card-header">
+                    <div class="secondary-card-header-content">
+                        <p>$45,458</p>
+                        <p>Total Payment Returns</p>
+                    </div>
+                    <ion-icon name="card-outline" class="header-icon"></ion-icon>
+                </header>
+                <div class="secondary-card-footer">
+                    <p><span>-20%</span> vs Last Month</p>
+                    <a href="#">View</a>
+                </div>
+            </section>
+            <section class="secondary-card">
+                <header class="secondary-card-header">
+                    <div class="secondary-card-header-content">
+                        <p>$34,000</p>
+                        <p>Total Expense</p>
+                    </div>
+                    <ion-icon name="cash-outline" class="header-icon"></ion-icon>
+                </header>
+                <div class="secondary-card-footer">
+                    <p><span>-20%</span> vs Last Month</p>
+                    <a href="#">View</a>
+                </div>
+            </section>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© 2026 All rights reserved. Designed and developed with care.</p>
+    </footer>
+    <script src="js/header.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

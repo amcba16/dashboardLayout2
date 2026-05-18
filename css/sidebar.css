@@ -1,0 +1,74 @@
+#overlay {
+    height : 100%;
+    width : 100%;
+    backdrop-filter:blur(2px);
+    position : fixed;
+    z-index : 2;
+    inset : 0;
+    display : none;
+}
+#overlay.overlay-block {
+    display : block;
+}
+#sidebar {
+    z-index : 3;
+    border : 1px solid #A5158C;
+    background-color  : #410445;
+    height : 100%;
+}
+.sidebar-header {
+    border-bottom : 1px solid #A5158C;
+    padding : 0.62rem;
+    margin-top : 1rem;
+    
+}
+.sidebar-header-content {
+    display : flex;
+    gap : 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar-header h1 {
+    font-size : 1rem;
+    color : #FF2DF1;
+}
+.sidebar-header img {
+    width : 2rem;
+    height : 2rem;
+    border-radius : 5rem;
+    border : 1px solid #A5158C; 
+}
+.sidebar-menu a:link,
+.sidebar-menu a:visited {
+    text-decoration : none;
+    color : #FF2DF1;
+    font-size : 1rem;
+}
+.sidebar-menu a:hover ,
+.sidebar-menu a:active {
+    color : #F6DC43;
+}
+.sidebar-menu a:hover .sidebar-item {
+    border-color : #F6DC43;
+}
+.sidebar-item {
+    display : flex;
+    padding : 0.5rem;
+    gap : 1rem;
+    justify-content: start;
+    align-items: center;
+    font-size : 1.2rem;
+    margin : 1rem;
+    border : 1px solid #FF2DF1;
+    border-radius : 0.5rem;
+}
+#selected-item {
+    color : #F6DC43;
+}
+#selected-item .sidebar-item {
+    border-color : #F6DC43;
+}
+#sidebar-item {
+    position : sticky;
+    top : 1rem;
+}
