@@ -93,6 +93,103 @@
 .secondary-cards section:nth-child(3) .secondary-card-footer span {
     color : yellow;
 }
+
+.product-list-cards {
+    margin-top : 2rem;
+    display : grid;
+    grid-template-columns : 1fr;
+    gap : 1rem;
+}
+.product-list-card {
+    border : 1px solid #a5158c;
+    border-radius : 0.5rem;
+}
+.product-card-header {
+    display : flex;
+    justify-content : space-between;
+    align-items : center;
+    padding : 1rem; 
+    color : #ff2df1;
+}
+.product-card-header button {
+    background-color : #410445;
+    border : 1px solid #a5158c;
+    padding : 0.5rem;
+    color : #ff2df1;
+    border-radius : 0.5rem;
+}
+.border-bottom {
+    border-bottom : 1px solid #a5158c;
+}
+.product-info {
+    padding : 1rem;
+    display : flex;
+    gap : 1rem;
+    justify-content : space-between;
+    color : #ff2df1;
+    align-items : center;
+    line-height : 1.4;
+}
+.product-info img {
+    width : 2rem;
+    height : 2rem;
+    border-radius : 0.5rem;
+}
+.product-content {
+    width : 80%;
+}
+.product-content p:first-child {
+    font-size : 1rem;
+    font-weight : 400;
+}
+.product-content p:nth-child(2) span {
+    font-weight : bold;
+    color : #ff2df1;
+}
+.product-content p:nth-child(2) {
+    font-size : 0.9rem;
+    color : #a5158c;
+}
+.price-percentage {
+    font-size : 1rem;
+    border : 1px solid #a5158c;
+    padding : 0.5rem;
+    border-radius : 0.5rem;
+} 
+.red {
+    color : red;
+    background-color : rgba(255, 0, 0, 0.247);
+}
+.orange {
+    color : orange;
+    background-color : rgba(255, 166, 0, 0.29);
+}
+.blue {
+    color : blue;
+    background-color : rgba(0, 0, 255, 0.241);
+}
+.green {
+    color : green;
+    background-color : rgba(0, 128, 0, 0.316);
+}
+.yellow {
+    color : yellow;
+    background-color : rgba(255, 255, 0, 0.318);
+}
+.stock {
+    display : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items: center;
+    line-height : 1.4;
+    width : 30%;
+}
+.stock p:first-child {
+    color : #f6dc43;
+}
+.font {
+    font-size : 0.5rem;
+}
 @media (min-width : 768px) {
     .primary-cards {
         grid-template-columns : 1fr 1fr;
@@ -108,6 +205,9 @@
         grid-template-rows : 1fr;
     }
     .secondary-cards {
+        grid-template-columns : repeat(3,1fr);
+    }
+    .product-list-cards {
         grid-template-columns : repeat(3,1fr);
     }
 }

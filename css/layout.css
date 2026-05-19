@@ -11,11 +11,11 @@
   color: #f6dc43;
 }
 body {
-  height: 100vh;
+  /* min-height: 100vh; */
   display: grid;
   width : 100%;
   grid-template-columns: 300px 1fr;
-  grid-template-rows: 1fr 8fr 1fr;
+  grid-template-rows: auto 1fr auto;
   
   background-color: #410445;
   align-items: start;
