@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/inventory.css" />
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <aside id="sidebar">
+      <div id="sidebar-item">
+        <header class="sidebar-header">
+          <div class="sidebar-header-content">
+            <img src="img/profile.jpg" alt="logo" />
+            <h1>Admin Panel</h1>
+          </div>
+        </header>
+        <section class="sidebar-menu">
+          <a href="index.html">
+            <div class="sidebar-item">
+              <ion-icon name="home-outline"></ion-icon>
+              <p>Dashbaord</p>
+            </div>
+          </a>
+          <a href="inventory.html" id="selected-item">
+            <div class="sidebar-item">
+              <ion-icon name="cube-outline"></ion-icon>
+              <p>Inventory</p>
+            </div>
+          </a>
+          <a href="addItem.html">
+            <div class="sidebar-item">
+              <ion-icon name="add-outline"></ion-icon>
+              <p>Add Item</p>
+            </div>
+          </a>
+          <a href="report.html">
+            <div class="sidebar-item">
+              <ion-icon name="document-outline"></ion-icon>
+              <p>Report</p>
+            </div>
+          </a>
+          <a href="error.html">
+            <div class="sidebar-item">
+              <ion-icon name="alert-circle-outline"></ion-icon>
+              <p>404 Error</p>
+            </div>
+          </a>
+          <a href="login.html">
+            <div class="sidebar-item">
+              <ion-icon name="log-in-outline"></ion-icon>
+              <p>Login</p>
+            </div>
+          </a>
+          <a href="signup.html">
+            <div class="sidebar-item">
+              <ion-icon name="person-add-outline"></ion-icon>
+              <p>Sign Up</p>
+            </div>
+          </a>
+        </section>
+      </div>
+    </aside>
+    <header id="header">
+      <ion-icon name="menu-outline" id="menu-button"></ion-icon>
+      <div id="profile-icons">
+        <div class="notification-container">
+          <ion-icon name="notifications-outline" id="bell-icon"></ion-icon>
+          <div class="notification-content">
+            <div class="notification-item">
+              <img
+                src="img/profile.jpg"
+                alt="notification-item"
+                class="notification-item-image"
+              />
+              <div class="notification-item-content">
+                <p>New Order received</p>
+                <p>order #12345 has been placed</p>
+                <p>5 minutes ago</p>
+              </div>
+            </div>
+            <hr class="hr" />
+            <div class="notification-item">
+              <img
+                src="img/profile.jpg"
+                alt="notification-item"
+                class="notification-item-image"
+              />
+              <div class="notification-item-content">
+                <p>New user registered</p>
+                <p>User @cyberDragon has signed up</p>
+                <p>30 minutes ago</p>
+              </div>
+            </div>
+            <hr class="hr" />
+            <div class="notification-item">
+              <img
+                src="img/profile.jpg"
+                alt="notification-item"
+                class="notification-item-image"
+              />
+              <div class="notification-item-content">
+                <p>Payment confiremed</p>
+                <p>Payment of $299 has been received</p>
+                <p>1 hour ago</p>
+              </div>
+            </div>
+            <hr class="hr" />
+            <div class="view-all-notification">
+              <p>View all notification</p>
+            </div>
+          </div>
+        </div>
+        <div class="profile-setting">
+          <img src="img/profile.jpg" alt="logo" class="profile-picture" />
+          <div class="profile-setting-container">
+            <div class="border">
+              <header class="profile-header">
+                <img
+                  src="img/profile.jpg"
+                  alt="logo"
+                  class="profile-setting-image"
+                />
+                <div class="profile-header-name">
+                  <p>Cyber Dragon</p>
+                  <p>@Cyber</p>
+                </div>
+              </header>
+            </div>
+            <div class="profile-setting-content">
+              <a href="#">Home</a>
+              <a href="#">Inbox</a>
+              <a href="#">Chat</a>
+              <a href="#">Activity</a>
+              <a href="#">Account Setting</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="inventory-header">
+        <div class="inventory-header-content">
+          <h1>Inventory</h1>
+          <p>Manage your product inventory</p>
+        </div>
+        <button class="inventory-header-button">Add Product</button>
+      </section>
+      <section class="inventory-table">
+        <header class="inventory-table-header">
+          <input type="search" placeholder="Search products..." />
+          <div class="inventory-header-buttons">
+            <button class="icon-button">
+              <ion-icon
+                name="filter-circle-outline"
+                class="button-icon"
+              ></ion-icon>
+              <span>Filter</span>
+            </button>
+            <button class="icon-button">
+              <ion-icon
+                name="document-text-outline"
+                class="button-icon"
+              ></ion-icon>
+              <span>Excel</span>
+            </button>
+            <button class="icon-button">
+              <span>PDF</span>
+            </button>
+          </div>
+        </header>
+        <section class="inventory-table-body">
+          <table class="main-table">
+            <thead>
+              <tr>
+                <td>Image</td>
+                <td>Code</td>
+                <td>Category</td>
+                <td>Brand</td>
+                <td>Price</td>
+                <td>Unit</td>
+                <td>Quantity</td>
+                <td>Action</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="table-item-image">
+                    <img src="img/eairbuds.jpg" alt="product-image"/>
+                    <p>Pro Gaming Controller</p>
+                  </div>
+                </td>
+                <td>PRD-112</td>
+                <td>Electronics</td>
+                <td>CyberTech</td>
+                <td>$89.49</td>
+                <td>pcs</td>
+                <td>128</td>
+                <td>
+                  <div class="table-item-button">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-item-image">
+                    <img src="img/eairbuds.jpg" alt="product-image"/>
+                    <p>Wireless Earbuds Pro</p>
+                  </div>
+                </td>
+                <td>PRD-237</td>
+                <td>Accessories</td>
+                <td>NovaGoods</td>
+                <td>$24.99</td>
+                <td>box</td>
+                <td>42</td>
+                <td>
+                  <div class="table-item-button">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-item-image">
+                    <img src="img/eairbuds.jpg" alt="product-image"/>
+                    <p>USB‑C Fast Charger</p>
+                  </div>
+                </td>
+                <td>PRD-398</td>
+                <td>Peripherals</td>
+                <td>ArcWave</td>
+                <td>$139.00</td>
+                <td>pcs</td>
+                <td>64</td>
+                <td>
+                  <div class="table-item-button">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-item-image">
+                    <img src="img/eairbuds.jpg" alt="product-image"/>
+                    <p>Portable Bluetooth Speaker</p>
+                  </div>
+                </td>
+                <td>PRD-420</td>
+                <td>Gaming</td>
+                <td>BluePeak</td>
+                <td>$59.75</td>
+                <td>pcs</td>
+                <td>203</td>
+                <td>
+                  <div class="table-item-button">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-item-image">
+                    <img src="img/eairbuds.jpg" alt="product-image"/>
+                    <p>Compact Powerbank</p>
+                  </div>
+                </td>
+                <td>PRD-501</td>
+                <td>Entertainment</td>
+                <td>Orbitron</td>
+                <td>$17.99</td>
+                <td>set</td>
+                <td>12</td>
+                <td>
+                  <div class="table-item-button">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-item-image">
+                    <img src="img/eairbuds.jpg" alt="product-image"/>
+                    <p>Gamming Joy Stick</p>
+                  </div>
+                </td>
+                <td>PRD-001</td>
+                <td>Electronics</td>
+                <td>Brand Name</td>
+                <td>$99.99</td>
+                <td>pcs</td>
+                <td>150</td>
+                <td>
+                  <div class="table-item-button">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="table-item-image">
+                    <img src="img/eairbuds.jpg" alt="product-image"/>
+                    <p>Gamming Joy Stick</p>
+                  </div>
+                </td>
+                <td>PRD-001</td>
+                <td>Electronics</td>
+                <td>Brand Name</td>
+                <td>$99.99</td>
+                <td>pcs</td>
+                <td>150</td>
+                <td>
+                  <div class="table-item-button">
+                    <ion-icon name="create-outline"></ion-icon>
+                    <ion-icon name="trash-outline"></ion-icon>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="6">Showing product per page</td>
+                <td colspan="2">
+                  <div class="footer-buttons">
+                    <button>Previous</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>Next</button>
+                  </div>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>Designed and developed with care.</p>
+    </footer>
+    <script src="js/header.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

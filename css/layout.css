@@ -11,7 +11,7 @@
   color: #f6dc43;
 }
 body {
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: grid;
   width : 100%;
   grid-template-columns: 300px 1fr;
