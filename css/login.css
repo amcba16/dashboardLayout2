@@ -111,6 +111,9 @@ body {
     text-decoration : none;
     color:#f6dc43;
 }
+.signup a:hover, .signup a:visited {
+    color :#f6dc43;
+}
 .signup p {
     color : #ff2df1;
 }
