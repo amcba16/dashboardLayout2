@@ -1,0 +1,66 @@
+.report-header {
+    color : #ff2df1;
+    line-height : 1.4;
+}
+.report-cards {
+    margin-top : 2rem;
+    display : grid;
+    grid-template-columns : 1fr;
+    gap : 1rem;
+}
+.report-card {
+    border : 1px solid #a5158c;
+    border-radius : 0.5rem;
+    padding : 1rem;
+    color :#ff2df1;
+    line-height : 1.4;
+}
+.report-card p:first-child {
+    margin-bottom : 2rem;
+}
+.report-card p:nth-child(2) {
+    font-weight : bold;
+    font-size : 1.5rem;
+}
+.report-card p:last-child {
+    color : rgba(12, 239, 12, 0.541);
+}
+.red {
+    color : rgba(255, 0, 0, 0.468) !important;
+}
+.product-list-container {
+    margin-top : 2rem;
+    color :#ff2df1;
+    border : 1px solid #a5158c;
+    border-radius : 0.5rem;
+    padding : 1rem;
+}
+.product {
+    display : flex;
+    justify-content: space-between;
+    margin-top : 1rem;
+    border-bottom : 1px solid #a5158c;
+    padding : 1rem;
+}
+.product img {
+    width : 2rem;
+    height : 2rem;
+    border-radius : 0.5rem;
+}
+.product-content {
+    display : flex;
+    gap : 1rem;
+}
+.product-list .product:last-child {
+    border : none;
+}
+@media (min-width : 764px) {
+    .report-cards {
+        grid-template-columns : repeat(2,1fr);
+    }
+}
+@media (min-width : 1000px) {
+    .report-cards {
+        grid-template-columns : repeat(4,1fr);
+    }
+}

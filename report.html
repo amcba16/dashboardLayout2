@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/report.css">
+</head>
+<body>
+    <div id="overlay"></div>
+    <aside id="sidebar">
+        <div id="sidebar-item">
+            <header class="sidebar-header">
+                <div class="sidebar-header-content">
+                    <img src="img/profile.jpg" alt="logo"/>
+                    <h1>Admin Panel</h1>
+                </div>
+            </header>
+            <section class="sidebar-menu">
+                <a href="index.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="home-outline"></ion-icon>
+                        <p>Dashbaord</p>
+                    </div>
+                </a>
+                <a href="inventory.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="cube-outline"></ion-icon>
+                        <p>Inventory</p>
+                    </div>
+                </a>
+                <a href="addItem.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <p>Add Item</p>
+                    </div>
+                </a>
+                <a href="report.html" id="selected-item">
+                    <div class="sidebar-item">
+                        <ion-icon name="document-outline"></ion-icon>
+                        <p>Report</p>
+                    </div>
+                </a>
+                <a href="error.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                        <p>404 Error</p>
+                    </div>
+                </a>
+                <a href="login.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="log-in-outline"></ion-icon>
+                        <p>Login</p>
+                    </div>
+                </a>
+                <a href="signup.html">
+                    <div class="sidebar-item">
+                        <ion-icon name="person-add-outline"></ion-icon>
+                        <p>Sign Up</p>
+                    </div>
+                </a>
+            </section>
+        </div>
+    </aside>
+    <header id="header">
+        <ion-icon name="menu-outline" id="menu-button"></ion-icon>
+        <div id="profile-icons">
+            <div class="notification-container">
+                <ion-icon name="notifications-outline" id="bell-icon"></ion-icon>
+                <div class="notification-content">
+                    <div class="notification-item">
+                        <img src="img/profile.jpg" alt="notification-item" class="notification-item-image"/>
+                        <div class="notification-item-content">
+                            <p>New Order received</p>
+                            <p>order #12345 has been placed</p>
+                            <p>5 minutes ago</p>
+                        </div>
+                    </div>
+                    <hr class="hr"/>
+                    <div class="notification-item">
+                        <img src="img/profile.jpg" alt="notification-item" class="notification-item-image"/>
+                        <div class="notification-item-content">
+                            <p>New user registered</p>
+                            <p>User @cyberDragon has signed up</p>
+                            <p>30 minutes ago</p>
+                        </div>
+                    </div>
+                    <hr class="hr"/>
+                    <div class="notification-item">
+                        <img src="img/profile.jpg" alt="notification-item" class="notification-item-image"/>
+                        <div class="notification-item-content">
+                            <p>Payment confiremed</p>
+                            <p>Payment of $299 has been received</p>
+                            <p>1 hour ago</p>
+                        </div>
+                    </div>
+                    <hr class="hr"/>
+                    <div class="view-all-notification">
+                        <p>View all notification</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="profile-setting">
+                <img src="img/profile.jpg" alt="logo" class="profile-picture">
+                <div class="profile-setting-container">
+                    <div class="border">
+                        <header class="profile-header">
+                            <img src="img/profile.jpg" alt="logo" class="profile-setting-image"/>
+                            <div class="profile-header-name">
+                                <p>Cyber Dragon</p>
+                                <p>@Cyber</p>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="profile-setting-content">
+                        <a href="#">Home</a>
+                        <a href="#">Inbox</a>
+                        <a href="#">Chat</a>
+                        <a href="#">Activity</a>
+                        <a href="#">Account Setting</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="report-header">
+            <h1>Reports</h1>
+            <p>View your inventory analytics and reports</p>
+        </section>
+        <section class="report-cards">
+            <section class="report-card">
+                <p>Total Revenue</p>
+                <p>$46,200</p>
+                <p>12% from last month</p>
+            </section>
+            <section class="report-card">
+                <p>Products Sold</p>
+                <p>1,234</p>
+                <p>8% from last month</p>
+            </section>
+            <section class="report-card">
+                <p>Low Stock Items</p>
+                <p>23</p>
+                <p class="red">3% from last month</p>
+            </section>
+            <section class="report-card">
+                <p>Out of Stock</p>
+                <p>5</p>
+                <p class="red">2% from last month</p>
+            </section>
+        </section>
+        <section class="product-list-container">
+            <section class="product-list-header">
+                <p>Top Products</p>
+            </section>
+            <section class="product-list">
+                <section class="product">
+                    <div class="product-content">
+                        <img src="img/eairbuds.jpg" alt="product-image"/>
+                        <div class="product-info">
+                            <p>Gaming Joy Stick</p>
+                            <p>156 units sold</p>
+                        </div>
+                    </div>
+                    <p>$3,120</p>
+                </section>
+                <section class="product">
+                    <div class="product-content">
+                        <img src="img/eairbuds.jpg" alt="product-image"/>
+                        <div class="product-info">
+                            <p>Wireless Earbuds</p>
+                            <p>98 units sold</p>
+                        </div>
+                    </div>
+                    <p>$2,450</p>
+                </section>
+                <section class="product">
+                    <div class="product-content">
+                        <img src="img/eairbuds.jpg" alt="product-image"/>
+                        <div class="product-info">
+                            <p>Bluetooth Headset</p>
+                            <p>74 units sold</p>
+                        </div>
+                    </div>
+                    <p>$1,980</p>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Designed and developed with care.</p>
+    </footer>
+    <script src="js/header.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
