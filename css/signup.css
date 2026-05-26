@@ -1,0 +1,99 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing : border-box;
+    font-family : sans-serif;
+}
+body {
+    background-color : #410445;
+    min-height : 100vh;
+    display : flex;
+    justify-content : center;
+    align-items : center;
+}
+.signup-container {
+    border : 1px solid #a5158c;
+    border-radius : 0.5rem;
+    padding : 1rem;
+    width : 90%;
+}
+.signin-header {
+    color :#ff2df1;
+    display : flex;
+    flex-direction : column;
+    gap : 0.5rem;
+    justify-content : center;
+    align-items : center;
+}
+.signin-header img {
+    width : 3rem;
+    height : 3rem;
+    border-radius : 5rem;
+    border : 1px solid #a5158c;
+}
+.signin-header p {
+    font-size : 1.2rem;
+}
+.form-group {
+    display : flex;
+    flex-direction : column;
+    gap : 0.5rem;
+    margin : 0.5rem 0;
+    color : #ff2df1;
+}
+.form-group input {
+    background-color : #410445;
+    padding : 0.5rem;
+    border : none;
+    border : 1px solid #a5158c;
+    border-radius : 0.5rem;
+    color : #f6dc43;
+}
+.form-group input::placeholder {
+    color : #a5158c;
+}
+.form-group input:focus {
+    outline : none;
+    border : 1px solid #ff2df1;
+    box-shadow : 0 0 1px 1px #ff2df1;
+}
+.agree {
+    display : flex;
+    align-items : center;
+    gap : 0.5rem;
+    color : #ff2df1;
+    margin-bottom : 0.5rem;
+}
+.agree input[type="checkbox"]:focus {
+    outline : none;
+    border : 1px solid #ff2df1;
+    box-shadow : 0 0 1px 1px #ff2df1;
+}
+.signup-button {
+    width : 100%;
+    background-color : #f6dc43;
+    color : #410445;
+    padding : 0.5rem;
+    border-radius : 0.5rem;
+    margin-bottom : 0.5rem;
+}
+.already-account {
+    color : #ff2df1;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+.already-account a:link, .already-accounta:active {
+    text-decoration : none;
+    color : #ff2df1;
+    cursor: pointer;
+}
+.already-account a:hover, .already-account a:visited {
+    color : #f6dc43;
+}
+
+@media (min-width : 768px) {
+    .signup-container {
+        width : 30%;
+    }
+}
